@@ -29,9 +29,6 @@ const App = () => {
         class="bg_image"
         style={{
           backgroundImage: 'url(' + paper + ')',
-          // backgroundSize: "cover",
-          // height: "100vh",
-          // color: "#f5f5f5"
         }}
       >
         <p>{data.text}</p>
