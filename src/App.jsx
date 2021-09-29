@@ -6,6 +6,9 @@ import './App.css';
 import paper from "./images/paper.jpg"
 
 const App = () => {
+  // const useEffect = (() => {
+  //   document.title = "Did You Know?"
+  // }, [])
   const [data, setData] = useState({})
 
   useEffect(() => {
@@ -13,8 +16,8 @@ const App = () => {
   }, [])
 
   useEffect(() => {
-    console.log("Hiya, welcome to the app")
-  }, [data])
+    document.title = "Did You Know?"
+  }, [])
 
   const handleFetch = async () => {
     let response = await fetch("https://uselessfacts.jsph.pl/random.json?language=en")
