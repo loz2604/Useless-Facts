@@ -6,17 +6,10 @@ import './App.css';
 import paper from "./images/paper.jpg"
 
 const App = () => {
-  // const useEffect = (() => {
-  //   document.title = "Did You Know?"
-  // }, [])
   const [data, setData] = useState({})
 
   useEffect(() => {
     handleFetch()
-  }, [])
-
-  useEffect(() => {
-    document.title = "Did You Know?"
   }, [])
 
   const handleFetch = async () => {
